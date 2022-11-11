@@ -39,3 +39,36 @@ h1 {
     cursor: pointer;
     position: absolute;
 }
+
+a {
+    text-decoration: none;
+}
+
+a:visited{
+    color:black;
+  }
+
+.results {
+    margin-top: 1rem;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+    align-items: center;
+    font-size:  150%;
+    font-family: 'Cute Font', cursive;
+    font-weight: bold;
+}
+.result-score {
+    margin-left: .5rem ;
+    font-size: 1rem;
+}
+
+.result-selection {
+opacity: .4;
+}
+
+.result-selection.winner {
+opacity: 1;
+font-size: 200%;
+}
