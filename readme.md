@@ -69,7 +69,7 @@ also using the built in debugger in the IDE, only bugs found where the 8 ones th
 i had some issues with absolute filepaths (wich had been mentioned in the LMS), wich caused me to totally 
 panic in the last minute deploying the project the first try. 
 
-The live link can be found here - 
+The live link can be found here - https://peterholmqvist.github.io/newSpockGame/
 
 
 ## Credits 
