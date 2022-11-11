@@ -71,3 +71,10 @@ function addSelectionResult(selection, winner) {
  function isWinner(selection, opponentSelection) {
     return selection.beats.includes(opponentSelection.name);
   }
+
+  /**Function that randomizes the computers choice of the objects from the array by multiplying random number  from 
+ * 0<1 with the arrays length.  */
+function randomSelection() {
+    let randomIndex = Math.floor(Math.random() * SELECTIONS.length);
+    return SELECTIONS[randomIndex];
+}
