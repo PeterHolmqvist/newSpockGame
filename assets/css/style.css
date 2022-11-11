@@ -28,3 +28,14 @@ h1 {
 .selection:hover {
     transform: scale(1.2);
 }
+
+#rules {
+    font-family:'Cute Font', cursive;
+    font-size: 23px;
+    font-weight: bold;
+    justify-content: left;
+    background: none;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+}
