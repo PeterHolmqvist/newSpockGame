@@ -38,3 +38,17 @@ selectionButtons.forEach(selectionButton => {
         makeSelection(selection);
     }); 
 });
+
+/**Function that determines the winner based on the selection */
+function makeSelection(selection) {
+    let computerSelection = randomSelection();
+    let yourWinner = isWinner(selection, computerSelection);
+    let computerWinner = isWinner(computerSelection, selection);   
+    
+    addSelectionResult(computerSelection, computerWinner);
+    addSelectionResult(selection, yourWinner);
+
+    if (yourWinner) incrementScore(yourScoreSpan);
+    if (computerWinner) incrementScore(computerScoreSpan);
+
+}
