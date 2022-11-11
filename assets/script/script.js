@@ -39,7 +39,7 @@ selectionButtons.forEach(selectionButton => {
     }); 
 });
 
-/**Function that determines the winner based on the selection */
+
 function makeSelection(selection) {
     let computerSelection = randomSelection();
     let yourWinner = isWinner(selection, computerSelection);
@@ -64,3 +64,10 @@ function addSelectionResult(selection, winner) {
     if (winner) div.classList.add('winner');
     finalColumn.after(div);
 }
+
+/** This funtion checks if the oppponent selection beats your selection by returning the 'beats' value with 'name'
+ *  value from the keys of the array obejcts. 
+  */
+ function isWinner(selection, opponentSelection) {
+    return selection.beats.includes(opponentSelection.name);
+  }
