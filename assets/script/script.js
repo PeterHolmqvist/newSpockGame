@@ -29,3 +29,12 @@ let SELECTIONS = [{
     beats: ['rock', 'scissors']
   },
 ]; 
+
+/** Function that adds an event listener for clicks on each button and make the selection when clicked */
+selectionButtons.forEach(selectionButton => {
+    selectionButton.addEventListener('click', e => {
+        let selectionName = selectionButton.dataset.selection;
+        let selection = SELECTIONS.find(selection => selection.name === selectionName);
+        makeSelection(selection);
+    }); 
+});
